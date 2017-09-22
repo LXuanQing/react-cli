@@ -1,0 +1,16 @@
+//babel配置文件，不需要做修改，因为都配置好了
+{
+  "presets": [
+    "es2015",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    [ "transform-runtime",{
+      "helpers": false,
+      "polyfill": false,
+      "regenerator": true,
+      "moduleName": "babel-runtime"
+    }]
+  ]
+}

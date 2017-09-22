@@ -1,0 +1,48 @@
+{
+  "name": "react-liu",
+  "version": "1.0.0",
+  "description": "简单实用的react脚手架，刘玄清开发",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build-mac": "rm -rf build/* && export NODE_ENV=production && webpack --progress --hide-modules --config webpack.config.js",
+    "build-win": "del/f/s/q build && set NODE_ENV=production&& webpack --progress --hide-modules --config webpack.config.js",
+    "mock": "node ./mock/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "刘玄清",
+  "license": "MIT",
+  "keywords": ["reactjs", "react脚手架", "react架构"],
+  "devDependencies": {
+    "axios": "^0.16.2",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.22.0",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "koa": "^2.3.0",
+    "koa-router": "^7.2.1",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.2",
+    "postcss-loader": "^0.7.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.6.1"
+  },
+  "dependencies": {
+    "fastclick": "^1.0.6",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.2",
+    "redux": "^3.6.0"
+  }
+}
